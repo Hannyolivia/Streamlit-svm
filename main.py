@@ -4,7 +4,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 import joblib
 
 # Memuat model SVM dan TF-IDF vectorizer yang telah disimpan
-svm_classifier = joblib.load('svm_model_smote.pkl')
+svm_classifier = joblib.load('naivebayes.pkl')
 tfidf_vectorizer = joblib.load('vectorizer.pkl')
 
 # Fungsi untuk melakukan prediksi terhadap input teks
@@ -18,7 +18,7 @@ st.title("ANALISIS SENTIMEN 🎮")
 
 st.markdown(
     """
-     **Aplikasi Analisis Sentimen** menggunakan model **SVM** untuk memprediksi sentimen dari teks yang Anda masukkan. 
+     **Aplikasi Analisis Sentimen** menggunakan model **Naive Bayes** untuk memprediksi sentimen dari teks yang Anda masukkan. 
     
     📌 **Cara Penggunaan:**
     1. Masukkan kalimat pada kolom input.
